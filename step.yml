@@ -95,4 +95,4 @@ inputs:
       summary: "Client Options"
       is_expand: true
       is_required: true
-      is_sensitive: true
+      is_sensitive: false
