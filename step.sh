@@ -43,7 +43,7 @@ EOF
     echo ${client_crt} | base64 -D -o client.crt > /dev/null 2>&1
     echo ${client_key} | base64 -D -o client.key > /dev/null 2>&1
 
-    cat <<EOF > /etc/openvpn/client.conf
+    cat <<EOF > client.conf
 client
 dev tun
 proto ${proto}
