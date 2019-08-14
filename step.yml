@@ -65,6 +65,15 @@ inputs:
       value_options:
         - udp
         - tcp
+  - openvpn_options: |-
+      comp-lzo
+      verb 3
+    opts:
+      title: "Client Options"
+      summary: "Client Options"
+      is_expand: true
+      is_required: true
+      is_sensitive: false
   - ca_crt: "$VPN_CA_CRT_BASE64"
     opts:
       title: "Base64 encoded CA Certificate"
@@ -86,12 +95,3 @@ inputs:
       is_expand: true
       is_required: true
       is_sensitive: true
-  - openvpn_options: |-
-      comp-lzo
-      verb 3
-    opts:
-      title: "Client Options"
-      summary: "Client Options"
-      is_expand: true
-      is_required: true
-      is_sensitive: false
