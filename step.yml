@@ -86,8 +86,7 @@ inputs:
       is_expand: true
       is_required: true
       is_sensitive: true
-  - openvpn_options:
-    content: |-
+  - openvpn_options: |-
       comp-lzo
       verb 3
     opts:
