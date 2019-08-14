@@ -86,3 +86,13 @@ inputs:
       is_expand: true
       is_required: true
       is_sensitive: true
+  - openvpn_options:
+    content: |-
+      comp-lzo
+      verb 3
+    opts:
+      title: "Client Options"
+      summary: "Client Options"
+      is_expand: true
+      is_required: true
+      is_sensitive: true

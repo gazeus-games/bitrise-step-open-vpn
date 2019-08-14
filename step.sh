@@ -18,11 +18,10 @@ resolv-retry infinite
 nobind
 persist-key
 persist-tun
-comp-lzo
-verb 3
 ca ca.crt
 cert client.crt
 key client.key
+${openvpn_options}
 EOF
 
     service openvpn start client > /dev/null 2>&1
@@ -52,11 +51,10 @@ resolv-retry infinite
 nobind
 persist-key
 persist-tun
-comp-lzo
-verb 3
 ca ca.crt
 cert client.crt
 key client.key
+${openvpn_options}
 EOF
     
     sudo openvpn --config client.conf > /dev/null 2>&1 &
